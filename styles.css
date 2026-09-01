@@ -1,0 +1,616 @@
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+    background-color: rgb(147, 189, 147);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    /* Add a background color or image */
+    background-color:  rgb(147, 189, 147); /* see bottom of file for color variables */
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: rgb(25, 80, 25);
+    font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 0px;
+    
+}
+.container{
+  margin:20px;
+  margin-top:0;
+  background-color: rgb(201, 255, 201);
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+    color:rgb(211, 130, 143);
+    text-align:center;
+}
+
+h2 {
+    color: rgb(161, 102, 112);
+}
+
+h3 {
+    color: rgb(188, 121, 132);
+}
+
+h4 {
+    color:rgb(25, 129, 25);
+}
+
+p {
+   
+}
+a:link{
+  color:purple;
+}
+a:visited{
+  color:pink;
+}
+a:hover{
+  color:#a6a0cf
+}
+a:active{
+  color:#28eb76;
+}
+a,
+a * {
+    
+}
+
+button {
+    /* Example Style, replace with your own! */
+    background-color: pink;;    /* button color */
+    color: rgb(49, 119, 61);               /* text color */
+    border: none;               /* hides the default border */
+    padding: 5px 12px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: cell;            /* makes the cursor change when over button */
+}
+
+button:hover {
+    /* Make the button look different when the user hovers over it */
+    color:pink;
+    background-color: green;
+}
+
+ul {
+    list-style: disc;
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header-container { /* Example A: This styles elements with class="header" */
+    display: flex;
+    flex-direction:row;
+    align-items: center;      /* Vertically aligns the logo and buttons */
+    /*justify-content: space-between; /* Logo on left, buttons on right */
+    padding: 0;
+    border:0;
+    margin:0;
+    width : 100%;
+}
+
+header{
+  width:100%;
+}
+
+.header-item:nth-of-type(1) {
+    width: 100%;
+    height:auto;
+}
+#Home{
+  width:100%;
+  height:250px;
+  margin-top: 60px;
+}
+.header-item:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+.header-item:nth-of-type(3) {
+    display: flex;
+    justify-content: start;;
+    gap:10px;
+}
+
+
+
+.header-button{
+
+}
+
+.about{
+  background-color:rgb(255, 233, 236);
+  border-radius: 25px;
+  padding: 3px 20px;
+  margin: 10px 10px;
+}
+
+iframe{
+  width: 100%;
+  max-width: 500px;
+}
+
+.event-schedule{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+#schedule{
+  text-align: center;
+}
+.schedule-item:nth-child(1){
+  display:flex;
+  flex-direction: column;
+  margin:10px;
+  flex:1;
+  min-width: 0; 
+  padding: 20px;
+  border-radius: 15px;
+  background-color:rgb(255, 233, 236);
+}
+.schedule-item:nth-child(2){
+  display:flex;
+  flex-direction: column;
+  margin:10px;
+  flex:1;
+  min-width: 0; 
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(255, 233, 236);
+}
+.schedule-item:nth-of-type(3){
+  display:flex;
+  flex-direction: column;
+  margin:10px;
+  flex:1;
+  min-width: 0; 
+  padding: 20px;
+  border-radius: 15px;
+  background-color:rgb(255, 233, 236);
+}
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:  rgb(147, 189, 147);
+}
+.footer a:link{
+  color:rgb(161, 102, 112);
+}
+.footer a:visited{
+  color:pink;
+}
+.footer a:hover{
+  color: pink;
+}
+.footer a:active{
+  color: green;
+}
+
+/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
+.navbar{
+  background-color: #f7c6d9;
+  padding:5px 15px;
+  display:flex;
+  width:100%;
+  height:65px;
+  position:fixed;
+  top:0;
+  left:0;
+  box-sizing:border-box;
+  z-index: 1000;
+}
+.navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin:0;
+    padding:0;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar ul li {
+    margin: 0px;
+}
+
+.navbar ul li a {
+    color: #2f5d36;
+    text-decoration: none;
+    font-size: 15px;
+    display:block;
+    padding: 10px;
+    white-space:nowrap;
+}
+
+.navbar ul li a:hover {
+    color: #c97997;
+}
+.navbar ul li button{
+  background-color:rgb(74, 112, 77);
+  color:rgb(202, 255, 202);
+  font-family: serif;
+}
+.navbar ul li button:hover{
+  background-color: #c97997;
+}
+.logo{
+}
+.logo img{
+  height: 50px;
+  width: auto;
+}
+.header-left{
+  display:flex;
+  align-items: center;
+  margin-right:auto;
+  height:100%;
+}
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:40px;
+  margin-left:auto;
+}
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+.links{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /*background-color: green;*/
+}
+.block{
+  display:flex;
+  
+}
+#links-title{
+    background-color:rgb(255, 233, 236);
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+#rsvp-title{
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.rsvp-container {
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+  width:100%;
+  padding-bottom:30px;
+  padding-left:10px;
+}
+.rsvp-para{
+  width:55%;
+  padding-right:10px;
+  padding-left:10px;
+}
+.dark-mode .rsvp-para{
+  color: rgb(255, 215, 221);
+}
+.rsvp-participants{
+  width:45%;
+  padding-right:10px;
+}
+.dark-mode .rsvp-participants{
+  color: rgb(255, 215, 221);
+}
+#rsvp-button{
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: rgb(33, 116, 33);
+}
+
+.form-container{
+  padding-left: 10px;
+}
+.dark-mode #rsvp-form label{
+  color:pink;
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background-color:rgb(244, 192, 192);
+  /* Set border-color and background */
+}
+
+
+/* Add other rsvp-related selectors here */
+
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Animations  ***
+  
+  Purpose:
+  - Add style rules to enable scroll animations for your website
+
+  When To Modify:
+  - [ ] Project 8 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.revealable {
+  --reveal-distance: 150px; /* CSS Variable */
+
+  scroll-margin-top: var(--reveal-distance);
+  opacity: 0;
+  transition: all 2s ease;
+  position: relative;
+  transform: translateY(var(--reveal-distance));
+  z-index: 1;
+}
+
+.active {
+  scroll-margin-top: 0;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reduce-motion *{
+  animation: none;
+  transition: none;
+  scroll-behavior:auto;
+}
+
+
+/*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 55%;
+
+    /* Customize modal style here */
+    background-color: rgb(178, 255, 199);
+    color: rgb(196, 81, 162);
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+    flex-direction: column;
+}
+.modal-item{
+  display: flex;
+}
+#modalButton{
+  margin-top: 20px;
+}
+.modal-item img{
+    height: 150px;
+    width:auto;
+}
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+/* Default dark mode style */
+.dark-mode {
+  background-color: rgb(46, 60, 46);
+}
+.dark-mode .navbar{
+  background-color: rgb(56, 10, 56);
+}
+
+.dark-mode .navbar .header-right li a{
+  color:#c97997;
+}
+.dark-mode .navbar .header-right li a:hover{
+  color:#2f5d36;
+}
+.dark-mode .navbar .header-right li button{
+  background-color: #c97997;
+  color:rgb(255, 255, 255);
+}
+.dark-mode .navbar .header-right li button:hover{
+  background-color: rgb(74, 112, 77);
+}
+.dark-mode .container{
+  background-color: rgb(74, 112, 77);
+}
+/* Example: Different dark mode style for h1 */
+.dark-mode h1 {
+    color: rgb(207, 155, 164);
+}
+.dark-mode h2{
+  color:rgb(255, 204, 212);
+}
+.dark-mode .container .header-container .header-item button{
+  background-color: rgb(56, 10, 56);
+  color:pink;
+}
+.dark-mode .container .about h2{
+  color: #c97997;
+}
+.dark-mode .container .about{
+  background-color:rgb(56, 10, 56);
+  color: pink;
+}
+.dark-mode .container h4{
+  color: rgb(56, 10, 56);
+}
+.dark-mode .container ul li{
+  color:#c97997;
+}
+.dark-mode .container .event-schedule .schedule-item{
+  background-color: rgb(56, 10, 56);
+}
+.dark-mode .container .event-schedule .schedule-item h3{
+  color: #c97997;
+}
+.dark-mode .container .event-schedule .schedule-item p{
+  color:pink;
+}
+.dark-mode .container .links #links-title{
+  background-color: rgb(56, 10, 56);
+  color: pink;
+}
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}

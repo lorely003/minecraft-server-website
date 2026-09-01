@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+    <title>After Hours Server</title>
+    <link rel="icon" href="img\creeper-1817227_1280.png">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
+    <div class="navbar">
+        <ul>
+            <div class="header-left">
+                <li class="logo">
+                    <a href="#Home">
+                        <img src="img/Minecraft-Logo.png" alt="Minecraft Logo">
+                    </a>
+                </li>
+            </div>
+            <div class="header-right">
+                <li><a href="#schedule"><b>Schedule</b></a></li>
+                <li><a href="#join"><b>How to join</b></a></li>
+                <li><a href=#rsvp-title><b>Sign up</b></a></li>
+                <li><a href="#rsvp-title"><b>Contact us</b></a></li>
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+                <li><button id="motion-button">Reduce Motion: OFF</button></li>
+            </div>
+        </ul>
+    </div>
+    <div class="container">
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="header-container">
+            <header>
+                <div class="header-item">
+                    <img id="Home" src="img\images.jpg" alt="Cherry Biome">
+                </div>
+                <div class="header-item">
+                    <h1>After Hours Server</h1>
+                    <h2>Let's mine and craft together!!</h2>
+                </div>
+                <div class="header-item">
+                    <button type="button">Server IP address</button>
+                    <button type="button">Upcoming activities</button>
+                </div>
+            </header>
+        </div>
+
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="about">
+            <h2>About the Event</h2>
+            <p>The purpose of the website is to provide clear, organized, and updated information about a Minecraft
+                server created for a community of gamers. </p>
+            <p>Here our friends are able to join the server and participate in the community! Get ready to have fun as
+                gamer friends and let your creativity fly.</p>
+            <p>It's all right if you are a speed runner or just like to chill. This server is for everyone!</p>
+        </div>
+        <h3 id="join" class="revealable">How to join a Minecraft server explanation (just in case)</h3>
+        <iframe class="revealable" width="560" height="315"
+            src="https://www.youtube.com/embed/XVT6gx8Bl6Y?si=ZXF144ksmhOR9428" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 class="revealable">What to Expect</h3>
+        <h4 class="revealable">Do you want to...</h4>
+        <ul class="revealable">
+            <li> <b>Join a community:</b> <i>Create connections and bond with friends.</i></li>
+            <li> <b>Play Minecraft:</b> <i>A server for you to enjoy the game.</i></li>
+            <li> <b>Learn about the game:</b> <i>Share knowledge about playing with others.</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <h2 id="schedule" class="revealable">Event Schedule</h2>
+        <div class="event-schedule revealable">
+            <div class="schedule-item">
+                <img alt="Diamond" src="img\11-2-minecraft-diamond-png.png" height="150" style="object-fit: contain;" />
+                <h3>Friday Night - Let's go mining!</h3>
+                <p>A cozy activity between friends where we get resources together and chat while we do it.</p>
+            </div>
+            <div class="schedule-item">
+                <img alt="Creeper" src="img\Minecraft-Transparent-Background-PNG.png" height="150"
+                    style="object-fit: contain;" />
+                <h3>Saturday - Let's fight together!</h3>
+                <p>Let's gain XP by killing the meanest mobs.</p>
+            </div>
+            <div class="schedule-item">
+                <img alt="Players and a pig" src="img\minecraft_PNG15.png" height="150" style="object-fit: contain;" />
+                <h3>Sunday - Create Farms!</h3>
+                <p>We'll learn to build all kinds of farms.</p>
+            </div>
+        </div>
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+-->
+        <div class="rsvp revealable">
+            <h2 id="rsvp-title">Join the Server</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>Ready for your next Minecraft adventure? Join our server and become part of a welcoming community
+                        where you can build, explore, and compete in exciting events. Gather your friends, jump into the
+                        game, and start making unforgettable memories!</p>
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎮 Alex from Florida has Joined.</p>
+                    <p>🎮 Miguel from New York has Joined.</p>
+                    <p>🎮 Fernando from Montana has Joined.</p>
+                    <p id="confirmation"></p>
+                    <p id="rsvp-count">⭐ 3 people have joined this server!</p>
+                </div>
+            </div>
+
+            <!--- Sign RSVP Form --->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <!-- form inputs go here -->
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location">
+                    <label for="username">Minecraft Username</label>
+                    <input type="text" id="username" name="username">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                </form>
+
+                <!-- Submit button -->
+                <button id="rsvp-button">Join Server</button>
+            </div>
+        </div>
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] -->
+        <!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+-->
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div class="modal-item">
+                    <p id="modal-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, consequatur sequi voluptatibus ut magni maxime quidem velit excepturi iure, necessitatibus quo aut sapiente asperiores. Perspiciatis tenetur quam asperiores deleniti illo?</p>
+                    <img id="modalImg" src="img\540-5405507_minecraft-character-art-minecraft-alex-and-steve.png" alt="character with sword">
+                </div>
+                <button id="modalButton">Close</button>
+            </div>
+            
+        </div>
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="links revealable">
+            <h2><span id="links-title">Links</span></h2>
+
+            <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+            <ul>
+                <li><a class="block" href="https://www.minecraft.net/en-us/article/how-play-minecraft-server"
+                        target="_blank">
+                        <article>
+                            <h3>How to play on a minecraft server</h3>
+                            <p>Minecraft explains to you everything about joining a server</p>
+                        </article>
+                    </a></li>
+                <li><a class="block"
+                        href="https://apexminecrafthosting.com/guides/general/how-to-join-a-minecraft-server-on-pc/"
+                        target="_blank">
+                        <article>
+                            <h3>How to join a minecraft server on PC</h3>
+                            <p>More explanations on how to play together!</p>
+                        </article>
+                    </a></li>
+            </ul>
+        </div>
+
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+        <div class="footer revealable">
+            <a href="https://www.minecraft.net/" target="_blank">Minecraft/</a>
+            <a href="https://minecraft.wiki/" target="_blank">Minecraft wiki</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
